@@ -30,7 +30,7 @@ jobs:
         run: curl ${{ env.URL }}
 
       - name: ZAP scan
-        uses: bigbunn/action-full-scan@master
+        uses: hermanka/action-full-scan@master
         with:
           target : ${{ env.URL}}
           network_name: isolated
